@@ -1,7 +1,7 @@
 import pytest
 from playwright.sync_api import Page
 
-from libs.pages import InfrastructuresPage
+from libs.pages.infrastructures.infrastructures import InfrastructuresPage
 
 
 @pytest.fixture()

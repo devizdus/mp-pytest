@@ -1,16 +1,16 @@
 import pytest
 from playwright.sync_api import Page, expect
 
-from libs.pages import InfrastructuresPage
+from libs.pages.infrastructures.infrastructures import InfrastructuresPage
 
 
 @pytest.fixture(autouse=True)
-def prepare_page(self, page: Page):
+def prepare_page(page: Page):
     page.goto("/#/scanning/infrastructure/list")
 
 
 def test_infrastructures_page_content(
-    self, page: Page, infrastructures_page: InfrastructuresPage
+    page: Page, infrastructures_page: InfrastructuresPage
 ):
     expect(page).to_have_title("Инфраструктура · MaxPatrol 10")
     expect(infrastructures_page.btnAddInfrastructure).to_be_visible()

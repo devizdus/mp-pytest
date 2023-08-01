@@ -10,7 +10,9 @@ class InfrastructuresPage(BasePage):
         super().__init__(root)
 
         self.btnAddInfrastructure = self.root.locator("[e2e-id=btnAddInfrastructure]")
+
         self.btnEditInfrastructure = self.root.locator("[e2e-id=btnEditInfrastructure]")
+
         self.btnDeleteInfrastructure = self.root.locator(
             "[e2e-id=btnDeleteInfrastructure]"
         )

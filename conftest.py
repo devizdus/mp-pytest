@@ -5,7 +5,7 @@ import pytest
 from dotenv import load_dotenv
 from playwright.sync_api import Browser
 
-pytest_plugins = ("libs.fixtures.pages", "libs.fixtures.components")
+pytest_plugins = ["libs.fixtures.pages"]
 
 
 def pytest_configure(config: pytest.Config):
