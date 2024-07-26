@@ -5,11 +5,6 @@ description = ""
 authors = []
 readme = "README.md"
 
-[[tool.poetry.source]]
-name = "pt-security"
-url = "https://pypi-proxy.ptsecurity.com"
-priority = "default"
-
 [tool.poetry.dependencies]
 python = "^3.10"
 allure-pytest = "^2.13.2"
